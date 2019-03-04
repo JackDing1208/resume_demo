@@ -31,22 +31,22 @@ a{
 }
 .top>nav>ul>li>a{
   color: #B3B3B3;
-  text-decoration: none;
   font-weight: bold;
 }
-.top>nav>ul{
+.top nav ul{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.top>nav>ul>li{
+.top nav ul>li{
   float: left;
-  margin-left: 17px;
-  margin-right: 17px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-.top>nav>ul>li>a{
+
+.top nav ul li a{
   border-bottom: 3px solid transparent;
 }
-.top>nav>ul>li>a:hover{
+.top nav ul li a:hover{
   border-bottom-color: #DC6465;
 }
