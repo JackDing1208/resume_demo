@@ -1,5 +1,5 @@
 body{
-  background:bisque;
+  background:black;
 }
 a{
   text-decoration: none;
@@ -10,11 +10,14 @@ a{
   clear: both;
 }
 
-
+.top{
+    margin-top: 23px;
+}
 .logo{
   font-family:Arial Black;
-  font-size: 22px;
-  padding-top: 1px;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 .logo .RS{
   color: #e6686a;
@@ -25,7 +28,7 @@ a{
 }
 
 .top>nav {
-  font-size: 13px;
+  font-size: 14px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -40,12 +43,12 @@ a{
 }
 .top nav ul>li{
   float: left;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 17px;
+  margin-right: 17px;
 }
 
 .top nav ul li a{
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .top nav ul li a:hover{
   border-bottom-color: #DC6465;
