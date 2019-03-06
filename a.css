@@ -1,5 +1,5 @@
 body{
-  background:bisque;
+  background:white;
 }
 * {
   margin: 0px;
@@ -70,6 +70,10 @@ border-bottom:3px solid #e6686a ;
 .top{
   padding: 0 16px;
 }
+main{
+  margin-top: -340px;
+}
+
 main .card{
   background-color: #fff;
   max-width: 940px;
@@ -130,10 +134,12 @@ padding: 5px 0;
 
 .info dt{
   font-weight: bold;
+  width: 30%
 }
 
 .info dd{
   color: #9da0a7;
+  width: 70%
 }
 
 footer{
@@ -142,3 +148,17 @@ footer{
   text-align: center;
 }
 
+
+
+footer a{
+  display: inline-block;
+  line-height: 10px;
+  width: 36px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  margin: 16px;
+}
+
+footer a:hover{
+  background-color: #cf5d5f; 
+}
