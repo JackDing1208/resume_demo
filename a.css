@@ -5,6 +5,10 @@ body{
   margin: 0px;
   padding: 0px;
 }
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
 ul,
 ol {
   list-style: none;
@@ -161,4 +165,171 @@ footer a{
 
 footer a:hover{
   background-color: #cf5d5f; 
+}
+.introduction{
+  text-align: center;
+  font-size: 18px;
+  font-family: kai;
+}
+ 
+body > main .DLbutton {
+  text-align: center;
+}
+body > main .download {
+  font-size: 14px;
+  padding: 21px 55px;
+  border: 1px solid #cdcfd1;
+  background: #efefef;
+  display: inline-block;
+  line-height: 16px;
+  border-radius: 2px;
+  color: #3d4451;
+  font-weight: bold;
+  margin: 32px 0;
+  transition: box-shadow 0.2s;
+}
+
+body > main .download:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+section h2{
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.skill ol{
+  background-color: #fff;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 42px 50px 10px 50px;
+  box-sizing: border-box;
+}
+
+.skill li{
+  float: left;
+  width: 48%;
+
+}
+.skill li:nth-child(even){
+  float: right;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.progressbar{
+height: 5px;
+background-color: #FAE1E1;
+border-radius: 2px;
+margin: 4px 0 40px 0
+}
+
+.progress{
+height: inherit;
+background-color: #E6686A;
+border-radius: 2px;
+width: 60%;
+}
+
+.skill h3{
+  font-size: 14px;
+  font-family: Arial;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+
+
+.portfolio li{
+  float: left;
+  font-size: 16px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.portfolio li:first-child{
+  margin-left: 0;
+}
+
+.portfolio ol{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 5px;
+}
+
+.portfolio nav{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.portfolio{
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.bar{
+height: 5px;
+background-color: #fff;
+}
+
+.bar .choose{
+  transition: all 0.3s;
+}
+
+.bar.state1 .choose{
+height: 100%;
+width: 17%;
+background-color: #E6686A;
+border-radius: 2px;
+margin-left: 0;
+}
+
+.bar.state2 .choose{
+height: 100%;
+width: 18%;
+background-color: #E6686A;
+border-radius: 2px;
+margin-left: 70px;
+}
+
+.bar.state3 .choose{
+height: 100%;
+width: 28%;
+background-color: #E6686A;
+border-radius: 2px;
+margin-left: 140px;
+}
+
+.works{
+  position: relative;
+  height: 597px;
+}
+
+.work1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.work2{
+  position: absolute;
+  top: 0px;
+  left: 645px;
+}
+
+.work3{
+  position: absolute;
+  top: 312px;
+  left:645px;
+
 }
