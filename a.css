@@ -152,20 +152,6 @@ footer{
   text-align: center;
 }
 
-
-
-footer a{
-  display: inline-block;
-  line-height: 10px;
-  width: 36px;
-  padding: 5px 5px;
-  border-radius: 50%;
-  margin: 16px;
-}
-
-footer a:hover{
-  background-color: #cf5d5f; 
-}
 .introduction{
   text-align: center;
   font-size: 18px;
@@ -332,4 +318,23 @@ margin-left: 140px;
   top: 312px;
   left:645px;
 
+}
+
+.media svg{
+  fill: #fff;
+  height: 30px;
+  width: 30px;
+  padding: 10px 10px;
+}
+
+
+footer a{
+  border-radius: 50%;
+  display: inline-block;
+  margin:10px 10px;
+
+}
+
+footer a:hover{
+  background-color: #cf5d5f; 
 }
