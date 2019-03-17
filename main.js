@@ -8,8 +8,9 @@ work3.onclick = function () {
     choice.className = 'bar state3'
 }
 
+var progress = document.getElementsByClassName('progress')
 
-document.onscroll = function () {
+window.onscroll = function () {
     if (window.scrollY > 100) {
         fixtop.classList.add('moving')
     }
@@ -19,7 +20,6 @@ document.onscroll = function () {
 }
 
 
-var progress = document.getElementsByClassName('progress')
 document.onscroll = function () {
     var div = document.getElementById('skill')
     if (window.scrollY > (div.offsetTop - 600)) {
