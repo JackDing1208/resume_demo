@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <div id="loading" class="loading active"></div>
     <div class="fixtop">
         <div class="top clearfix">
             <div class="logo">
@@ -160,25 +161,18 @@
                 <div class="choose"></div>
             </div>
         </nav>
-        <script>
-            work1.onclick = function () {
-                choice.className = 'bar state1'
-            }
-            work2.onclick = function () {
-                choice.className = 'bar state2'
-            }
-            work3.onclick = function () {
-                choice.className = 'bar state3'
-            }
-        </script>
+
         <div class="works">
             <div class="work1"><img src="./img/work1.jpg" alt="work1"></div>
             <div class="work2"><img src="./img/work2.jpg" alt="work2"></div>
             <div class="work3"><img src="./img/work3.jpg" alt="work3"></div>
         </div>
     </section>
+    <script src="./main.js"></script>
+    <script>
+        loading.classList.remove('active')
+    </script>
 </body>
 
-<img src="" alt="">
 
 </html>

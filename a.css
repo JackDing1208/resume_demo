@@ -269,6 +269,7 @@ background-color: #fff;
 }
 
 .bar .choose{
+  height: 5px;
   transition: all 0.3s;
 }
 
@@ -337,4 +338,41 @@ footer a{
 
 footer a:hover{
   background-color: #cf5d5f; 
+}
+.loading{
+  display:none;
+}
+
+.loading.active{
+  width:100%;
+  height:100%;
+  position: fixed;
+  background-color:gray;
+  display:block;
+  z-index: 5;
+}
+
+
+.loading::before,.loading::after{
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width:0px;
+  height: 0px;
+  border-radius:50%;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  margin:auto;
+  animation:loading 2s linear infinite;
+}
+
+.loading::after{
+  animation-delay:1s;
+}
+
+@keyframes loading{
+  0%{width:0 ;height:0;opacity: 1;}
+  100%{width:100px; height:100px; opacity: 0;}
 }
