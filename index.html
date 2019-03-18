@@ -30,10 +30,22 @@
             </div>
             <nav>
                 <ul class="clearfix">
-                    <li><a href="#">关于</a> </li>
-                    <li><a href="#">技能</a> </li>
-                    <li><a href="#">作品</a> </li>
-                    <li><a href="#">博客</a> </li>
+                    <li><a href="#site-about">关于</a> </li>
+                    <li><a href="#site-skill">技能</a> </li>
+                    <li class="isSub"><a href="#site-portfolio">作品</a>
+                        <ul class="submenu">
+                            <li>分类1</li>
+                            <li>分类2</li>
+                            <li>分类3</li>
+                        </ul>
+                    </li>
+                    <li class="isSub"><a href="#">博客</a>
+                        <ul class="submenu">
+                            <li>分类1</li>
+                            <li>分类2</li>
+                            <li>分类3</li>
+                        </ul>
+                    </li>
                     <li><a href="#">日历</a> </li>
                     <li><a href="#">联系方式</a> </li>
                     <li><a href="#">其他</a> </li>
@@ -44,7 +56,7 @@
     <div class="banner">
         <div class="alpha"></div>
     </div>
-    <main>
+    <section id="site-about" class="about">
         <div class="card">
             <div class="CardInfo clearfix">
                 <div class="photo">
@@ -107,8 +119,8 @@
             丁一，计划成为初级前端工程师，目前学习中<br>
             技能：前端开发，Rails 开发，Node.js 开发
         </p>
-    </main>
-    <section id="skill" class="skill">
+    </section>
+    <section id="site-skill" class="skill">
         <h2>技能</h2>
         <ol class="clearfix">
             <li>
@@ -149,7 +161,7 @@
             </li>
         </ol>
     </section>
-    <section class="portfolio">
+    <section id="site-portfolio" class="portfolio">
         <h2>作品集</h2>
         <nav>
             <ol class="clearfix">

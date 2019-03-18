@@ -32,18 +32,18 @@ a{
   font-size: 24px;
 }
 
-.top nav li a{
+.top nav>ul>li a{
 color:#b7b7b7;
 font-size: 12px;
 padding-bottom: 5px;
 border-left:3px solid transparent;
 border-right:3px solid transparent;
 }
-.top nav li a:hover{
+.top nav>ul>li a:hover{
 border-bottom:3px solid #e6686a ;
 }
 
-.top nav li{
+.top nav>ul>li{
   padding:15px;
   float: left;
   font-weight: bold;
@@ -85,11 +85,11 @@ border-bottom:3px solid #e6686a ;
 .top{
   padding: 0 16px;
 }
-main{
+.about{
   margin-top: -340px;
 }
 
-main .card{
+.about .card{
   background-color: #fff;
   max-width: 940px;
   margin-left: auto;
@@ -169,10 +169,10 @@ footer{
   font-family: kai;
 }
  
-body > main .DLbutton {
+body > .about .DLbutton {
   text-align: center;
 }
-body > main .download {
+body > .about .download {
   font-size: 14px;
   padding: 21px 55px;
   border: 1px solid #cdcfd1;
@@ -186,7 +186,7 @@ body > main .download {
   transition: box-shadow 0.2s;
 }
 
-body > main .download:hover {
+body > .about .download:hover {
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
 }
 section h2{
@@ -372,7 +372,6 @@ footer a:hover{
   z-index: 5;
 }
 
-
 .loading::before,.loading::after{
   content: '';
   position: absolute;
@@ -396,3 +395,28 @@ footer a:hover{
   0%{width:0 ;height:0;opacity: 1;}
   100%{width:100px; height:100px; opacity: 0;}
 }
+
+.fixtop li{
+  position: relative;
+}
+
+.fixtop .submenu{
+  position: absolute;
+  white-space: nowrap;
+  left: 5px;
+  display: none;
+  border-radius: 3px;
+}
+
+.fixtop .isSub.active .submenu{
+  display: block;
+}
+
+
+.fixtop .submenu li{
+  font-size: 14px;
+  padding: 5px;
+  color:black;
+  background-color: #dddddd;
+}
+
