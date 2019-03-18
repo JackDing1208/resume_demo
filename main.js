@@ -39,7 +39,14 @@ for (var i = 0; i < subnav.length; i++) {
     }
 }
 
-var section = document.getElementsByTagName('section')
+
+function animate(time) {
+    requestAnimationFrame(animate);
+    TWEEN.update(time);
+}
+requestAnimationFrame(animate);
+
+
 let aNav = document.querySelectorAll('nav>ul>li>a')
 for (var i = 0; i < aNav.length; i++) {
     aNav[i].onclick = function (x) {
@@ -47,7 +54,18 @@ for (var i = 0; i < aNav.length; i++) {
         let href = x.target.getAttribute('href')
         //     console.log(x.target.href)会包含全部http地址
         let target = document.querySelector(href)
-        console.log(target)
-        window.scrollTo(0, target.offsetTop - 60)
+        //window.scrollTo(0, target.offsetTop - 60)
+        var coords = { y: window.scrollY };
+        var tween = new TWEEN.Tween(coords)
+            .to({ y: target.offsetTop - 60 }, 500)
+            .easing(TWEEN.Easing.Quadratic.Out)
+            .onUpdate(function () {
+                window.scrollTo(0, coords.y)
+            })
+            .start();
     }
 }
+
+
+
+
