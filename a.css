@@ -21,6 +21,13 @@ a{
   display: block;
   clear: both;
 }
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 .top .RS{
   color:#e6686a;
   font-family: Arial black;
@@ -420,3 +427,13 @@ footer a:hover{
   background-color: #dddddd;
 }
 
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  margin-top:30px;
+}
+
+.messageBand{
+  text-align: center;
+}

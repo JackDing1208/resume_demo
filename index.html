@@ -6,185 +6,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jack个人简历</title>
+    <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.css">
     <link rel="stylesheet" href="./a.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
     <script src="//at.alicdn.com/t/font_1073860_b2w8betheof.js"></script>
-    <style type="text/css">
-        .icon {
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
-    </style>
+    <script src="./node_modules/swiper/dist/js/swiper.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script>
 </head>
 
 <body>
-    <div id="loading" class="loading active"></div>
-    <div id="fixtop" class="fixtop">
-        <div class="top clearfix">
-            <div class="logo">
-                <a class="logo" href="#" alt="logo">
-                    <span class="RS">JD</span><span class="card">card</span>
-                </a>
-            </div>
-            <nav>
-                <ul class="clearfix">
-                    <li><a href="#site-about">关于</a> </li>
-                    <li><a href="#site-skill">技能</a> </li>
-                    <li class="isSub"><a href="#site-portfolio">作品</a>
-                        <ul class="submenu">
-                            <li>分类1</li>
-                            <li>分类2</li>
-                            <li>分类3</li>
-                        </ul>
-                    </li>
-                    <li class="isSub"><a href="#">博客</a>
-                        <ul class="submenu">
-                            <li>分类1</li>
-                            <li>分类2</li>
-                            <li>分类3</li>
-                        </ul>
-                    </li>
-                    <li><a href="#">日历</a> </li>
-                    <li><a href="#">联系方式</a> </li>
-                    <li><a href="#">其他</a> </li>
-                </ul>
-            </nav>
+<div id="loading" class="loading active"></div>
+<div id="fixtop" class="fixtop">
+    <div class="top clearfix">
+        <div class="logo">
+            <a class="logo" href="#" alt="logo">
+                <span class="RS">JD</span><span class="card">card</span>
+            </a>
         </div>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#site-about">关于</a></li>
+                <li><a href="#site-skill">技能</a></li>
+                <li class="isSub"><a href="#site-portfolio">作品</a>
+                    <ul class="submenu">
+                        <li>分类1</li>
+                        <li>分类2</li>
+                        <li>分类3</li>
+                    </ul>
+                </li>
+                <li class="isSub"><a href="#">博客</a>
+                    <ul class="submenu">
+                        <li>分类1</li>
+                        <li>分类2</li>
+                        <li>分类3</li>
+                    </ul>
+                </li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="banner">
-        <div class="alpha"></div>
-    </div>
-    <section id="site-about" class="about">
-        <div class="card">
-            <div class="CardInfo clearfix">
-                <div class="photo">
-                    <img src="./img/photo.jpg" alt="photo">
-                </div>
-                <div class="info">
+</div>
+<div class="banner">
+    <div class="alpha"></div>
+</div>
+<section id="site-about" class="about">
+    <div class="card">
+        <div class="CardInfo clearfix">
+            <div class="photo">
+                <img src="./img/photo.jpg" alt="photo">
+            </div>
+            <div class="info">
                     <span class="hello">Hello
                         <span class="triangle"></span>
                     </span>
-                    <h1>Jack Ding</h1>
-                    <p>前端工程师</p>
-                    <hr>
-                    <dl>
-                        <dt>年龄</dt>
-                        <dd>25</dd>
-                        <dt>学历</dt>
-                        <dd>本科</dd>
-                        <dt>所在地</dt>
-                        <dd>深圳</dd>
-                        <dt>手机</dt>
-                        <dd>186123123</dd>
-                        <dt>邮箱</dt>
-                        <dd>12345678@qq.com</dd>
-                    </dl>
-                </div>
+                <h1>Jack Ding</h1>
+                <p>前端工程师</p>
+                <hr>
+                <dl>
+                    <dt>年龄</dt>
+                    <dd>25</dd>
+                    <dt>学历</dt>
+                    <dd>本科</dd>
+                    <dt>所在地</dt>
+                    <dd>深圳</dd>
+                    <dt>手机</dt>
+                    <dd>186123123</dd>
+                    <dt>邮箱</dt>
+                    <dd>12345678@qq.com</dd>
+                </dl>
             </div>
+        </div>
 
-            <footer class="media">
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-zhihu-circle"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-facebook1"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-weibo1"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-twitter"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-github"></use>
-                    </svg>
-                </a>
-            </footer>
-        </div>
-        <div class="DLbutton">
-            <a href="#" class="download" target="_blank" download>下载PDF文档</a>
-        </div>
-        <p class="introduction">
-            丁一，计划成为初级前端工程师，目前学习中<br>
-            技能：前端开发，Rails 开发，Node.js 开发
-        </p>
-    </section>
-    <section id="site-skill" class="skill">
-        <h2>技能</h2>
-        <ol class="clearfix">
-            <li>
-                <h3>HTML 5</h3>
-                <div class="progressbar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
-            </li>
-            <li>
-                <h3>CSS 3</h3>
-                <div class="progressbar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
-            </li>
-            <li>
-                <h3>jQuery</h3>
-                <div class="progressbar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
-            </li>
-            <li>
-                <h3>Vue.js</h3>
-                <div class="progressbar">
-                    <div class="progress" style="width: 60%;"></div>
-                </div>
-            </li>
-            <li>
-                <h3>React</h3>
-                <div class="progressbar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
-            </li>
-            <li>
-                <h3>Node.js</h3>
-                <div class="progressbar">
-                    <div class="progress" style="width: 60%;"></div>
-                </div>
-            </li>
-        </ol>
-    </section>
-    <section id="site-portfolio" class="portfolio">
-        <h2>作品集</h2>
-        <nav>
-            <ol class="clearfix">
-                <li id="work1">所有</li>
-                <li id="work2">框架</li>
-                <li id="work3">源生JS</li>
-            </ol>
-            <div id="choice" class="bar state1">
-                <div class="choose"></div>
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu-circle"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-facebook1"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo1"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+    <div class="DLbutton">
+        <a href="#" class="download" target="_blank" download>下载PDF文档</a>
+    </div>
+    <p class="introduction">
+        丁一，计划成为初级前端工程师，目前学习中<br>
+        技能：前端开发，Rails 开发，Node.js 开发
+    </p>
+</section>
+<section id="site-skill" class="skill">
+    <h2>技能</h2>
+    <ol class="clearfix">
+        <li>
+            <h3>HTML 5</h3>
+            <div class="progressbar">
+                <div class="progress" style="width: 80%;"></div>
             </div>
-        </nav>
-
-        <div class="works">
-            <div class="work1"><img src="./img/work1.jpg" alt="work1"></div>
-            <div class="work2"><img src="./img/work2.jpg" alt="work2"></div>
-            <div class="work3"><img src="./img/work3.jpg" alt="work3"></div>
+        </li>
+        <li>
+            <h3>CSS 3</h3>
+            <div class="progressbar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>jQuery</h3>
+            <div class="progressbar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Vue.js</h3>
+            <div class="progressbar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>React</h3>
+            <div class="progressbar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Node.js</h3>
+            <div class="progressbar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </li>
+    </ol>
+</section>
+<section id="site-portfolio" class="portfolio">
+    <h2>作品集</h2>
+    <div class="swiper-wrapper">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/work1.jpg" width="800"></div>
+                <div class="swiper-slide"><img src="./img/work2.jpg" width="800"></div>
+                <div class="swiper-slide"><img src="./img/work3.jpg" width="800"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-    </section>
-    <script src="./main.js"></script>
-    <script>
-        loading.classList.remove('active')
-    </script>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+<section class="messageBand">
+    <h2>留言板</h2>
+    <ol class="allMessage"></ol>
+    <form id="postMessage">
+        <input type="text" name="content" class="messageBandContent">
+        <input type="submit" value="提交">
+    </form>
+</section>
+
+
+<script src="./main.js"></script>
+<script src="./mesagge.js"></script>
+
+<script>
+    loading.classList.remove('active')
+</script>
 
 
 </body>

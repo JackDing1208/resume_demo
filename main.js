@@ -1,14 +1,3 @@
-work1.onclick = function () {
-    choice.className = 'bar state1'
-}
-work2.onclick = function () {
-    choice.className = 'bar state2'
-}
-work3.onclick = function () {
-    choice.className = 'bar state3'
-}
-
-
 window.onscroll = function () {
     if (window.scrollY > 100) {
         fixtop.classList.add('moving')
@@ -66,6 +55,26 @@ for (var i = 0; i < aNav.length; i++) {
     }
 }
 
+var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+})
 
 
