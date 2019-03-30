@@ -10,13 +10,18 @@
     $postMassage.on('submit', function (e) {
         e.preventDefault()
         let content = $('.messageBandContent')[0].value
-        console.log(content)
+        let name = $('.messageBandName')[0].value
         var Message = AV.Object.extend('Message');
         var post = new Message();
         post.save({
-            content: content
-        }).then(function (object) {
-            alert('提交成功')
+            content: content,
+            name: name
+        }).then(function (x) {
+            let li = $("<li></li>")
+            li[0].innerText = x.attributes.name + ':' + x.attributes.content
+            $('.allMessage').append(li[0])
+            $('.messageBandContent')[0].value=''
+            $('.messageBandName')[0].value=''
         })
     })
 
@@ -24,10 +29,9 @@
     query.find()
         .then(function (x) {
             let content = x.map((value) => (value.attributes))
-            console.log(content)
             content.forEach(function (value) {
                 let li = $("<li></li>")
-                li[0].innerText = value.content
+                li[0].innerText = value.name + ':' + value.content
                 $('.allMessage').append(li[0])
             })
         }, function (error) {

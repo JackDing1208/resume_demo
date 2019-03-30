@@ -435,5 +435,23 @@ footer a:hover{
 }
 
 .messageBand{
+max-width: 940px;
+  margin: 0 auto;
   text-align: center;
+}
+.messageBand form{
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 50px;
+}
+.messageBand ol{
+  border-top: 2px solid #dddddd;
+  text-align: left;
+}
+
+.messageBand ol li{
+  padding: 10px 0;
+  font-size: 20px;
+  color:#222222;
+  border-bottom: 2px solid #dddddd;
 }
