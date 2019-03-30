@@ -26,10 +26,9 @@
             let content = x.map((value) => (value.attributes))
             console.log(content)
             content.forEach(function (value) {
-                let li = document.createElement('li')
-                li.innerText = value.content
-                console.log(li)
-                $('.allMessage').append(li)
+                let li = $("<li></li>")
+                li[0].innerText = value.content
+                $('.allMessage').append(li[0])
             })
         }, function (error) {
             console.log(error) // 异常处理
