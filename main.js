@@ -1,21 +1,4 @@
-window.onscroll = function () {
-    if (window.scrollY > 100) {
-        fixtop.classList.add('moving')
-    }
-    else {
-        fixtop.classList.remove('moving')
-    }
-}
 
-var progress = document.getElementsByClassName('progress')
-document.onscroll = function () {
-    var skill = document.getElementById('site-skill')
-    if (window.scrollY > (skill.offsetTop - 600)) {
-        for (i = 0; i < progress.length; i++) {
-            progress[i].classList.add('play')
-        }
-    }
-}
 
 var subnav = document.getElementsByClassName('isSub')
 var submenu = document.getElementsByClassName('submenu')
