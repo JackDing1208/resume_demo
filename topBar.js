@@ -8,14 +8,21 @@
         },
         bindEvents: function () {
             var view = this.view
-            window.addEventListener("scroll", function () {
+            window.addEventListener("scroll", () => {
                 if (window.scrollY > 0) {
-                    view.classList.add('moving')
+                    this.active()
                 } else {
-                    view.classList.remove('moving')
+                    this.deactive()
                 }
             })
+        },
+        active: function () {
+            view.classList.add('moving')
+        },
+        deactive: function () {
+            view.classList.remove('moving')
         }
     }
     controller.init(view) //  一个对象调用函数，那么函数里的默认就是这个对象
+
 }.call()
